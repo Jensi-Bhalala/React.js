@@ -4,8 +4,8 @@ class Users extends Component {
     render() {
         return (
             <div>
-                <h2 align="center">USERS INFORMATION</h2>
-                    <table align="center" border={1} cellPadding={5}>
+                <h2 align="center">USERS</h2>
+                    <table align="center" border={1} cellPadding={10}>
                         <thead>
                             <tr>
                                 <th>GRID</th>
@@ -18,14 +18,14 @@ class Users extends Component {
                         </thead>
                         <tbody>
                         {
-                            this.props.info.map((info, i) => (
+                            this.props.data.map((data, i) => (
                                        <tr>
-                                       <td>{info.grid}</td>
-                                        <td>{info.name}</td>
-                                        <td>{info.email}</td>
-                                        <td>{info.password}</td>
-                                        <td>{info.course.join(" , ")}</td>
-                                        <td>{info.city}</td>
+                                       <td>{data.grid}</td>
+                                        <td>{data.name}</td>
+                                        <td>{data.email}</td>
+                                        <td>{data.password}</td>
+                                        <td>{data.course.join(" , ")}</td>
+                                        <td>{data.city}</td>
                                        </tr>
                             ))
                         }
