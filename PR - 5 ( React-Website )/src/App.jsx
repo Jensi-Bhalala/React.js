@@ -11,6 +11,8 @@ import Offer from "./Pages/Offer"
 import Review from "./Pages/Review"
 import News from "./News"
 import Footer from "./Footer"
+import 'bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap/dist/js/bootstrap.bundle.min.js'
 
 
 function App() {
