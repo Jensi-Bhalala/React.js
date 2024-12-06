@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --black: #000;
+    --white: #fff;
+    --color: #64b496;
+    --poppins: "Poppins", sans-serif;
+    --manerope: "Manrope", sans-serif;
+}
+.banner-content{
+    position: absolute;
+    top: 30%;
+    left: 10%;
+}
+.banner-content h5 span{
+    color: var(--color);
+    font-weight: 700;
+}
+.banner-content h5{
+    font-weight: 700;
+}
+.banner-content h1{
+    margin-bottom: 25px;
+    font-size: 55px;
+    font-family: "Manrope", sans-serif;
+    font-weight: 800;
+    line-height: 68px;
+}
+.banner-content p{
+    font-size: 17px;
+    line-height: 1.75;
+    color: #7a7a7a;
+}
+.banner-content button{
+    background-color: var(--color);
+    border: 0;
+}
+.banner-content button a{
+    color: #fff;
+}
+.banner-content button:hover{
+    background-color: black;
+    transition: 1s;
+}
+.carousel-item{
+    position: relative;
+}
+.carousel-item::after{
+        width: 200px;
+        height: 100px;
+        content: "";
+        background-image: url(https://maraviyainfotech.com/projects/carrot/carrot-v2/carrot-html/assets/img/shape/5.png);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: absolute;
+        bottom: 70px;
+        left: 0px;
+        z-index: 0;
+        /* -webkit-animation: left-right 10s linear infinite;
+        animation: left-right 10s linear infinite; */
+        opacity: 0.5;
+}
+.carousel-item::before{
+    width: 200px;
+    height: 100px;
+    content: "";
+    background-image: url(https://maraviyainfotech.com/projects/carrot/carrot-v2/carrot-html/assets/img/shape/3.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 90px;
+    right: 600px;
+    z-index: 0;
+    opacity: 0.5;
+}
+.banner-content::after{
+    width: 180px;
+    height: 80px;
+    content: "";
+    background-image: url(https://maraviyainfotech.com/projects/carrot/carrot-v2/carrot-html/assets/img/shape/4.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: 0;
+    top: -210px;
+    left: 500px;
+    opacity: 0.5;
+}
+.banner-content::before{
+    width: 150px;
+    height: 50px;
+    content: "";
+    background-image: url(https://maraviyainfotech.com/projects/carrot/carrot-v2/carrot-html/assets/img/shape/2.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -100px;
+    left: -217px;
+    z-index: 0;
+    opacity: 0.5;
+}
